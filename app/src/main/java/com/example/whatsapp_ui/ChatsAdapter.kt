@@ -7,16 +7,15 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import de.hdodenhof.circleimageview.CircleImageView
 
-class MyAdapter(var userdata: ArrayList<UserData>, var context: MainActivity) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class ChatsAdapter(var userdata: ArrayList<UserData>, var context: ChatsFragment) : RecyclerView.Adapter<ChatsAdapter.MyViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder {
-        val itemview = LayoutInflater.from(parent.context).inflate(R.layout.eachcard, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatsAdapter.MyViewHolder {
+        val itemview = LayoutInflater.from(parent.context).inflate(R.layout.chat_card, parent, false)
         return MyViewHolder(itemview)
     }
 
-    override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ChatsAdapter.MyViewHolder, position: Int) {
         val currentItem = userdata[position]
-
         holder.name.text = currentItem.name
         holder.message.text = currentItem.message
         holder.time.text = currentItem.time
