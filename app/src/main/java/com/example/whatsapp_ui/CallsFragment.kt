@@ -19,10 +19,10 @@ class CallsFragment : Fragment() {
         myRecyclerView = view.findViewById(R.id.recyclerview1)
         myRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        val names = arrayOf("Rahul", "Priya", "Amit", "Sneha")
-        val times = arrayOf("Yesterday, 8:30 PM", "Today, 12:15 PM", "2 hours ago", "Just now")
-        val images = arrayOf(R.drawable.user, R.drawable.man, R.drawable.person, R.drawable.profile)
-        val callTypes = arrayOf(R.drawable.ic_call_received, R.drawable.ic_call_made, R.drawable.ic_call_missed, R.drawable.ic_call_received)
+        val names = arrayOf("Rahul", "Priya", "Amit", "Sneha","Arjun", "Sanya", "Vikram", "Riya", "Manav", "Tanya")
+        val times = arrayOf("Yesterday, 8:30 PM", "Today, 12:15 PM", "2 hours ago", "Just now","Yesterday, 7:15 PM", "Today, 9:45 AM", "3 minutes ago", "Yesterday, 10:20 AM", "1 minutes ago", "Yesterday, 4:10 PM")
+        val images = arrayOf(R.drawable.user, R.drawable.man, R.drawable.person, R.drawable.profile,R.drawable.avatar,R.drawable.programmer,R.drawable.housekeeper,R.drawable.man3, R.drawable.profile, R.drawable.user2)
+        val callTypes = arrayOf(R.drawable.ic_call_received, R.drawable.ic_call_made, R.drawable.ic_call_missed, R.drawable.ic_call_received,R.drawable.ic_call_received,R.drawable.ic_call_made,R.drawable.ic_call_missed,R.drawable.ic_call_received,R.drawable.ic_call_made,R.drawable.ic_call_received)
 
         callData = arrayListOf()
         for (index in names.indices) {
