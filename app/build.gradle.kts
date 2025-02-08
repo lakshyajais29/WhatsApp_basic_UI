@@ -46,4 +46,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("androidx.biometric:biometric:1.2.0-alpha05")
+
 }
